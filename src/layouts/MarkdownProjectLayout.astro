@@ -1,0 +1,24 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import '../styles/blogpost.css'
+const { frontmatter } = Astro.props;
+---
+<BaseLayout pageTitle={frontmatter.title}>
+  <div class="content">
+    <div class="content-left-align">
+      <h1>{frontmatter.title}</h1>
+      <div class="tags">
+        <p>Tags : </p>
+        {frontmatter.tags.map((tag, index) => (
+          <p class="tag">
+            <a href={`/tags/${tag}`}>{tag}</a>{index < frontmatter.tags.length - 1 ? ',' : ''}
+          </p>
+        ))}
+      </div>
+      <p class="description">{frontmatter.description}</p>
+      <slot/>
+    </div>
+  </div>
+</BaseLayout>
+
+

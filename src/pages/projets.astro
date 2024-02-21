@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Navigation.astro';
+const allPosts = await Astro.glob('../pages/projects/*.md');
+const pageTitle = "My Astro Learning Blog";
+import '../styles/blog.css'
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <div class="content">
+    <Header/>
+    <h1>Mes projets</h1>
+    <ul class="articles-list">
+      {allPosts.map((post) => (
+        <li class="article">
+          <a href={post.url} class="article-title">
+            <div class="image-container"> <!-- Ajout du conteneur d'image -->
+              <img src={post.frontmatter.thumbnail} alt={`Thumbnail for ${post.frontmatter.title}`} class="article-image"/>
+            </div>
+            <span class="article-title"> {post.frontmatter.title}</span>
+            <span class="article-description"> {post.frontmatter.description}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>
+

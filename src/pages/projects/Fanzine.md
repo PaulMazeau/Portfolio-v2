@@ -1,0 +1,19 @@
+---
+layout: ../../layouts/MarkdownProjectLayout.astro
+title: 'Fanzine'
+pubDate: '2024-02-21'
+description: 'Plongez dans le monde captivant des fanzines à travers mon premier projet dédition indépendante, une célébration de la culture artistique capturée sur pellicule lors dun weekend à Bruxelles.'
+author: 'Paul Mazeau'
+image:
+    url: '/images/projects/Fanzine/zine.png'
+    alt: 'Couverture du Fanzine'
+tags: ["Art", "Publication", "Photographie"]
+thumbnail: "/images/projects/Fanzine/zine.png"
+---
+Ma plus grande passion est la lecture. Je ne suis pas fan de romans, mais plutôt de magazines et de livres d'art, en particulier les fanzines que j'achète lors d'événements ou dans des librairies indépendantes. Comme expliqué sur la page Disruptive World, l'idée est de créer une maison d'édition indépendante. Voici le premier livre que j'ai réalisé lors d'un weekend à Bruxelles. Toutes les photos sont prises sur pellicule, et les éléments graphiques sont faits maison.
+
+<img src="/images/projects/Fanzine/zine.png" alt="Fanzine" class="blog-content-image"/>
+<img src="/images/projects/Fanzine/zine1.png" alt="Fanzine Page 1" class="blog-content-image"/>
+<img src="/images/projects/Fanzine/zine2.png" alt="Fanzine Page 2" class="blog-content-image"/>
+<img src="/images/projects/Fanzine/zine3.png" alt="Fanzine Page 3" class="blog-content-image"/>
+
