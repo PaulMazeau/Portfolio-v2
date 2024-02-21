@@ -8,7 +8,7 @@ image:
     url: '/images/projects/MyColoc/MyColoc.png'
     alt: 'Application MyColoc'
 tags: ["Application", "Développement"]
-thumbnail: "/images/projects/MyColoc/MyColoc.png"
+thumbnail: "/images/projects/MyColoc/MyColocThumbmail.png"
 ---
 Le compagnon parfait pour votre colocation : MyColoc. Une application verticale qui centralise tout ce dont une colocation a besoin : une liste de courses partagée en temps réel, gestion automatisée des tâches, partage intelligent des dépenses et, le plus important, des mini-jeux. MyColoc a été entièrement conçu par moi et développé par Alexandre Wilk (back-end), Ariel Lissak Geller (3D et assets), et moi-même (front-end). L'application est disponible sur l'[AppStore](https://apps.apple.com/tr/app/mycoloc/id1637103231) et sur le [GooglePlayStore](https://play.google.com/store/apps/details?id=com.MyColoc.MyColocApp&hl=fr_CA&gl=Fr).
 

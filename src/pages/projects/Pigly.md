@@ -8,7 +8,7 @@ image:
     url: '/images/projects/Pigly/Pigly.png'
     alt: 'Application Pigly'
 tags: ["Tech", "Application"]
-thumbnail: "/images/projects/Pigly/Pigly.png"
+thumbnail: "/images/projects/Pigly/PiglyThumbmail.png"
 ---
 Pigly est une application qui vous donne un restaurant, un bar ou un club à visiter en 1 minute et 37 secondes basé sur votre humeur actuelle. L'application se concentre sur l'instant pour mettre fin au dilemme "où devrions-nous manger ?". Ce projet a été entièrement conçu par moi-même, et la partie business de l'application a été pensée par Mathis Laubier. Je suis actuellement en train de développer l'application, qui devrait être lancée d'ici la fin février. Pour en savoir plus sur le processus de création du projet, cliquez [ici](https://travaux.notion.site/Pigly-0fee184ae39c410daac410cb0a63bb22).
 
