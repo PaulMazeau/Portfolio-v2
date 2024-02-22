@@ -2,6 +2,7 @@
 layout: ../../layouts/MarkdownProjectLayout.astro
 title: 'Couch Cursor'
 pubDate: '2024-01-02'
+priority: 3
 description: 'CouchCursor est un plugin Figma qui gamifie le travail déquipe sur Figma. Cest mon premier plugin Figma, et je crois quun projet amusant est une bonne approche pour entrer dans lécosystème des plugins Figma.'
 author: 'Paul Mazeau'
 image:

@@ -2,6 +2,7 @@
 layout: ../../layouts/MarkdownProjectLayout.astro
 title: 'Pigly'
 pubDate: '2024-02-21'
+priority: 1
 description: 'Découvrez Pigly, lapplication révolutionnaire qui résout le dilemme où allons-nous manger ? en 1 minute et 37 secondes, en fonction de votre humeur actuelle. Conçue pour les décisions spontanées, Pigly est votre guide ultime vers la découverte culinaire.'
 author: 'Paul Mazeau'
 image:

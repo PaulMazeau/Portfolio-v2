@@ -2,6 +2,7 @@
 layout: ../../layouts/MarkdownProjectLayout.astro
 title: 'Fanzine'
 pubDate: '2024-02-21'
+priority: 2
 description: 'Plongez dans le monde captivant des fanzines à travers mon premier projet dédition indépendante, une célébration de la culture artistique capturée sur pellicule lors dun weekend à Bruxelles.'
 author: 'Paul Mazeau'
 image:
