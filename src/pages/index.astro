@@ -2,8 +2,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/homepage.css'
 const pageTitle = "Paul Mazeau";
+const pageDescription = "Explorez le monde du design de produits et du développement avec Paul Mazeau. Plongez dans mes aventures de design, développement et découvertes sur mon blog dédié à l'innovation et à la créativité.";
 ---
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
   <div class="hero-copy">
     <p>
       Salut! Je suis Paul Mazeau, je développe et design des trucs. J'écris beaucoup et je bois trop de thé.

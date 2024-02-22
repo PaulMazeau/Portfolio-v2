@@ -1,14 +1,20 @@
 ---
+// Continuez à importer vos styles globaux
 import '../styles/global.css';
-const { pageTitle } = Astro.props;
+const { 
+  pageTitle= "Paul Mazeau", 
+  pageDescription = "Explorez le monde du design de produits et du développement avec Paul Mazeau. Plongez dans mes aventures de design, développement et découvertes sur mon blog dédié à l'innovation et à la créativité." 
+  } = Astro.props;
 ---
-<html lang="en">
+
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
   </head>
   <body>
     <slot />

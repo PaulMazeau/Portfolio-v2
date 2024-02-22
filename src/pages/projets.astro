@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Navigation.astro';
 const allPosts = await Astro.glob('../pages/projects/*.md');
 const pageTitle = "Mes Projets";
+const pageDescription = "Explorez le monde du design de produits et du développement avec Paul Mazeau. Plongez dans mes aventures de design, développement et découvertes sur mon blog dédié à l'innovation et à la créativité.";
 import '../styles/blog.css'
 
 // Trier les posts par ordre de priorité défini, puis par titre si la priorité est égale
@@ -11,7 +12,7 @@ const sortedPosts = allPosts.sort((a, b) => {
 });
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
   <div class="content">
     <Header/>
     <h1>Mes projets</h1>
