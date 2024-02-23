@@ -6,7 +6,7 @@ const { frontmatter } = Astro.props;
 <BaseLayout pageTitle={frontmatter.title} pageDescription={frontmatter.description}>
   <div class="content">
   <div class="content-left-align">
-    <img src={frontmatter.thumbnail} width="100%" alt={frontmatter.image.alt} class="main-img" />
+    <img src={frontmatter.banner.url} width="100%" alt={frontmatter.banner.alt} class="main-img" />
 
     <h1>{frontmatter.title}</h1>
     <p>Ecris par: {frontmatter.author} le {frontmatter.pubDate.slice(0,10)}</p>
