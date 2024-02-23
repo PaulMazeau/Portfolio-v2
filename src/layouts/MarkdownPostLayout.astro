@@ -7,15 +7,18 @@ const { frontmatter } = Astro.props;
   <div class="content">
   <div class="content-left-align">
     <img src={frontmatter.banner.url} width="100%" alt={frontmatter.banner.alt} class="main-img" />
-
-    <h1>{frontmatter.title}</h1>
-    <p>Ecris par: {frontmatter.author} le {frontmatter.pubDate.slice(0,10)}</p>
+    
     <div class="tags">
-      <p>Tags : </p>
       {frontmatter.tags.map((tag) => (
-        <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+        <p class="tag">
+          <a href={`/tags/${tag}`}>{tag}</a>
+        </p>
       ))}
     </div>
+    
+    <h1>{frontmatter.title}</h1>
+    <p>Ecris par: {frontmatter.author} le {frontmatter.pubDate.slice(0,10)}</p>
+
     <p class="description">{frontmatter.description}</p>
     <slot class="content"/>
   </div>

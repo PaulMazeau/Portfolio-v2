@@ -8,10 +8,9 @@ const { frontmatter } = Astro.props;
     <div class="content-left-align">
       <h1>{frontmatter.title}</h1>
       <div class="tags">
-        <p>Tags : </p>
-        {frontmatter.tags.map((tag, index) => (
+        {frontmatter.tags.map((tag) => (
           <p class="tag">
-            <a href={`/tags/${tag}`}>{tag}</a>{index < frontmatter.tags.length - 1 ? ',' : ''}
+            <a href={`/tags/${tag}`}>{tag}</a>
           </p>
         ))}
       </div>
