@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Ma façon dapprendre et de travailler'
+title: "Ma façon d'apprendre et de travailler"
 pubDate: 01-02-2024
 description: 'This is the first post of my new Astro blog. This is the first post of my new Astro blog. This is the first post of my new Astro blog.'
 author: 'Paul Mazeau'
