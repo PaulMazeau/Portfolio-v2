@@ -27,6 +27,17 @@
     object-fit: cover;
   }
 
+  .blog-content-image {
+    width: 100%;
+    height: auto;
+  } 
+
+  .blog-content-image-details {
+    width: 60%;
+    height: auto;
+    margin: 0 20%;
+  } 
+
   .description {
     font-size: 18px;
   }
