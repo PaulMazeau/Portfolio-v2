@@ -11,8 +11,8 @@ image:
 tags: ["Application", "Développement", "Apprentissage"]
 thumbnail: "/images/projects/Challenge/ChallengeThumbmail.webp"
 ---
-Le compagnon parfait pour votre colocation : MyColoc. Une application verticale qui centralise tout ce dont une colocation a besoin : une liste de courses partagée en temps réel, gestion automatisée des tâches, partage intelligent des dépenses et, le plus important, des mini-jeux. MyColoc a été entièrement conçu par moi et développé par Alexandre Wilk (back-end), Ariel Lissak Geller (3D et assets), et moi-même (front-end). L'application est disponible sur l'[AppStore](https://apps.apple.com/tr/app/mycoloc/id1637103231) et sur le [GooglePlayStore](https://play.google.com/store/apps/details?id=com.MyColoc.MyColocApp&hl=fr_CA&gl=Fr).
+Le compagnon parfait pour votre battre la courbe de l'oublie : Challenge. Une application mobile qui permet de se créer des quizz sur ces leçons puis d'automatiser et optimiser la répétition de ce quizz pour apprendre au mieux une notion. The challenge App a été conçu, designer et développer par moi. L'application est actuellement disponible que pour mon usage personel, j'espère que durant l'année je pourrais la sortir aux grand public ce qui permettrait de gamifier tout type d'apprentissage. Je souhaite que l'application soit open source & privacy first pour respecter au maximum la donnée des utilisateurs et que le projet soit ouvert à tous & toutes.
 
-Pour en savoir plus sur le processus de création du projet, cliquez [ici](https://travaux.notion.site/MyColoc-1f13685a34d749d389d74ffe27ec9ce7).
+Pour en savoir plus sur le code source de l'application, cliquez [ici](https://github.com/PaulMazeau/TheChallengeApp).
 
 <img src="/images/projects/Challenge/Challenge.webp" alt="Challenge App Project Image" class="blog-content-image"/>
