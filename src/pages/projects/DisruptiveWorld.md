@@ -6,10 +6,10 @@ priority: 3
 description: "Disruptive World était initialement une marque de vêtements que j'ai créée en 2020, avec l'objectif d'améliorer mes compétences en design et en impression. Aujourd'hui, j'envisage de transformer Disruptive World en une maison d'édition indépendante dédiée au graffiti, à la photographie et au skateboard."
 author: 'Paul Mazeau'
 image:
-    url: '/images/projects/DisruptWorld/DisruptiveWorldThumbmail.webp'
+    url: '/images/projects/DisruptiveWorld/DisruptiveWorldThumbmail.webp'
     alt: 'Marque de vêtement Disruptive World'
 tags: ["Design", "Mode", "Édition"]
-thumbnail: "/images/projects/DisruptWorld/DisruptiveWorldThumbmail.webp"
+thumbnail: "/images/projects/DisruptiveWorld/DisruptiveWorldThumbmail.webp"
 ---
 
 En 2020, j'ai créé ma marque de vêtements Disruptive World. L'idée derrière ce projet était de pratiquer et d'améliorer mes compétences. J'ai tellement appris puisque je faisais tout de manière indépendante. J'ai codé le site web moi-même, conçu les T-shirts et, le plus important, imprimé tous les T-shirts en utilisant la sérigraphie/DTG. Aujourd'hui, pour redonner vie au projet qui a été en sommeil pendant un an, je souhaiterais transformer Disruptive World en une maison d'édition indépendante dédiée au graffiti, à la photographie et au skateboard.
