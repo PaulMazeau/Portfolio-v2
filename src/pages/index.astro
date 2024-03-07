@@ -5,26 +5,89 @@ const pageTitle = "Paul Mazeau";
 const pageDescription = "Explorez le monde du design de produits et du développement avec Paul Mazeau. Plongez dans mes aventures de design, développement et découvertes sur mon blog dédié à l'innovation et à la créativité.";
 ---
 <BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
-  <div class="hero-copy">
-    <p>
-      Salut! Je m'appelle Paul, je suis un developpeur et designer français. Passionné par les nouvelles technologies sous tous ses aspects: design, techniques et humains. Créateur de l’application mobile MyColoc fusionnée avec Coloc.fr. Je suis actuellement à la recherche d'une alternance.
-      Vous pouvez trouver mes projets <a href="/projets" class="link">ici</a> et tout ce que j'écris sur mon blog juste <a href="/blog" class="link">là.</a>
-    </p>
-  </div>
-  <div class="container">
-    <div class="gallery">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
+  <div class="content-container">
+    <div class="hero-copy">
+      <p>
+        Salut ! Je suis un designer et développeur résidant à Paris, actuellement à la recherche d'une alternance. Mon champ d'intérêts est assez vaste, allant du développement web et du codage créatif au design d'interface, et à l'expérience utilisateur.
+        <br><br>
+        Depuis mes années de lycée, j'ai consacré beaucoup de temps à développer des sites ou des applications mobile et au design d'interface utilisateur. Je suis en master 1 CTO et Tech lead au sein d'HETIC. En 2022, j'ai créer MyColoc, avec pour mission de faciliter la vie des colocataires au quotidien, racheté par Coloc.fr.
+        <br><br>
+        Pour plus d'informations sur mon parcours professionnel et mes passions, n'hésitez pas à explorer mes <a href="/projets" class="link">projets</a> et mon <a href="/blog" class="link">blog</a>.
+      </p>
+      <hr class="divider">
+      <div class="links-container">
+        <a href="https://github.com/PaulMazeau" class="link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.are.na/paul-m/channels" class="link" target="_blank" rel="noopener noreferrer">Are.na</a>
+        <a href="https://www.linkedin.com/in/paul-mazeau/" class="link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>      
     </div>
+    <canvas
+    id="cobe"
+    class="globe"
+    style="width: 500px; height: 500px"
+    width="1000"
+    height="1000"
+    ></canvas>
   </div>
   
-  </BaseLayout>
+  <script type="module">
+    import createGlobe from 'https://cdn.skypack.dev/cobe'
+  
+    let canvas = document.getElementById("cobe")
+    let isDragging = false
+    let lastX = 0
+    let lastY = 0
+    let phi = 0
+    let theta = 0
+  
+    const globe = createGlobe(canvas, {
+      devicePixelRatio: 2,
+      width: 1000,
+      height: 1000,
+      phi: 0.66,
+      theta: 0,
+      dark: 0,
+      diffuse: 1.9,
+      opacity: 0.83,
+      scale: 1,
+      mapSamples: 16000,
+      mapBrightness: 6,
+      baseColor: [1, 1, 1],
+      markerColor: [237, 0, 0],
+      glowColor: [1, 1, 1],
+      offset: [0, 0],
+      markers: [
+        { location: [48.8237106, 2.3484016], size: 0.04 },
+      ],
+      onRender: (state) => {
+        if (!isDragging) {
+          phi += 0.003
+        }
+        state.phi = phi
+        state.theta = theta
+      },
+    })
+  
+    canvas.addEventListener('mousedown', (e) => {
+      isDragging = true
+      lastX = e.pageX
+      lastY = e.pageY
+    })
+  
+    document.addEventListener('mousemove', (e) => {
+      if (isDragging) {
+        const deltaX = e.pageX - lastX
+        const deltaY = e.pageY - lastY
+        phi += deltaX * 0.01
+        theta += deltaY * 0.01
+        lastX = e.pageX
+        lastY = e.pageY
+      }
+    })
+  
+    document.addEventListener('mouseup', () => {
+      isDragging = false
+    })
+  </script>
+  
+</BaseLayout>
