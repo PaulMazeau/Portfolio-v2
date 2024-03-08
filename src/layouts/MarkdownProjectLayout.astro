@@ -17,7 +17,25 @@ const { frontmatter } = Astro.props;
       <p class="description">{frontmatter.description}</p>
       <slot/>
     </div>
+    
+    <a href="mailto:mazeau.paul@gmail.com?subject=Contact depuis le site web&body=Bonjour Paul," id="cta">
+      <span class="sr-only">Contactez-moi</span>
+      <span class="cta-text">Contactez-moi</span>
+    </a>
+         
   </div>
+  <script>
+    const cta = document.getElementById('cta');
+    cta.style.display = 'none';
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) { // Affiche le bouton après un défilement de 200px
+        cta.style.display = 'flex';
+      } else {
+        cta.style.display = 'none';
+      }
+    });
+  </script>
+  
 </BaseLayout>
 
 
