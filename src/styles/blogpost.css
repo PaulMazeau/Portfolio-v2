@@ -55,26 +55,27 @@
 
 #cta {
   position: fixed;
-  bottom: var(--padding);
-  right: var(--padding);
-  display: flex;
+  bottom: var(--padding, 20px); /* Assurez-vous d'avoir une valeur de fallback pour --padding */
+  right: var(--padding, 20px);
+  display: none; /* initialisé à none pour être géré par JavaScript */
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: var(--accent-color, black);
+  background: var(--accent-color, #333); /* Couleur de fond plus sombre */
   color: white;
   width: 50px;
   height: 50px;
   cursor: pointer;
   z-index: 1000;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; /* Transition fluide pour toutes les propriétés */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Ajout d'une ombre pour un effet plus profond */
 }
 
-#cta .cta-svg {
-  width: 24px;
-  height: 24px;
-  transition: opacity 0.3s ease;
+#cta:hover {
+  width: 128px; 
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Ombre plus prononcée au survol */
 }
 
 #cta .cta-text {
@@ -87,39 +88,14 @@
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-#cta:hover {
-  width: 128px; 
-  border-radius: 10px; 
-}
-
-#cta:hover .cta-svg {
-  opacity: 0; 
+  transition: opacity 0.3s ease, opacity 0s ease 0s; /* Transition modifiée pour disparition immédiate */
 }
 
 #cta:hover .cta-text {
   opacity: 1;
+  transition: opacity 0.3s ease 0.1s; /* Conserve le délai uniquement lors du survol */
 }
 
-#cta svg {
-  width: 24px;
-  height: 24px;
-}
-
-.show {
-  display: flex;
-  animation: fadeIn 0.5s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 20px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+#cta:hover .sr-only {
+  opacity: 0;
 }
