@@ -11,7 +11,7 @@ image:
 tags: ["Application", "Développement"]
 thumbnail: "/images/projects/MyColoc/MyColocThumbmail.webp"
 ---
-Le compagnon parfait pour votre colocation : MyColoc. Une application verticale qui centralise tout ce dont une colocation a besoin : une liste de courses partagée en temps réel, gestion automatisée des tâches, partage intelligent des dépenses et, le plus important, des mini-jeux. MyColoc a été entièrement conçu par moi et développé par Alexandre Wilk (back-end), Ariel Lissak Geller (3D et assets), et moi-même (front-end). L'application est disponible sur l'[AppStore](https://apps.apple.com/tr/app/mycoloc/id1637103231) et sur le [GooglePlayStore](https://play.google.com/store/apps/details?id=com.MyColoc.MyColocApp&hl=fr_CA&gl=Fr).
+Le compagnon parfait pour votre colocation : MyColoc. Une application verticale qui centralise tout ce dont une colocation a besoin : une liste de courses partagée en temps réel, gestion automatisée des tâches, partage intelligent des dépenses et, le plus important, des mini-jeux. MyColoc a été entièrement conçu par moi et développé par Alexandre Wilk (back-end), Ariel Lissak Geller (3D et assets), et moi-même (front-end). L'application est disponible sur l'[AppStore](https://apps.apple.com/tr/app/mycoloc/id1637103231) et sur le [GooglePlayStore](https://play.google.com/store/apps/details?id=com.MyColoc.MyColocApp&hl=fr_CA&gl=Fr). L'application a été racheté par Coloc.fr fin 2022 dans l'objectif de fournir un expérience fluide de la colocation au locataire de coloc.fr. 
 
 
 ## Problème Résolu
@@ -72,21 +72,21 @@ Basé sur les retours des tests utilisateurs, j'ai itéré notre design en appor
 
 ### Prototypage et Tests
 
-Après avoir affiné nos maquettes, nous avons procédé au développement de prototypes incluant des éléments d'interface utilisateur et de design d'interaction. Ces prototypes ont ensuite été utilisés pour des tests utilisateurs. Nous avons observé nos utilisateurs interagir avec le prototype et recueilli leurs retours sur son ergonomie et sa fonctionnalité.
+Après avoir affiné nos maquettes, nous avons procédé à la création de prototypes incluant des éléments d'interface utilisateur et de design d'interaction. Ces prototypes ont ensuite été utilisés pour des tests utilisateurs. Nous avons observé nos utilisateurs interagir avec le prototype et recueilli leurs retours sur son ergonomie et sa fonctionnalité.
 
 ### Documentation
 
-Tout au long du processus, j'ai conservé une documentation détaillée, incluant nos découvertes de recherche, profils de personas, histoires et parcours utilisateurs, ainsi que les itérations de maquettes et prototypes. Cela a assuré que nos décisions de design étaient transparentes et facilement comprises par les parties prenantes et l'équipe de développement.
+Tout au long du processus, j'ai conservé une documentation détaillée, incluant nos découvertes de recherche, profils de personas, histoires et parcours utilisateurs, ainsi que les itérations de maquettes et prototypes. Cela a assuré que nos décisions de design étaient transparentes et facilement comprises par toutes personnes travaillant de loin ou de près sur le projet.
 
-### Handoff et Implémentation
+### Développement
 
-Une fois le design final approuvé, j'ai préparé un document de spécifications de design et transmis les ressources de design à l'équipe de développement pour implémentation. J'ai travaillé en étroite collaboration avec l'équipe de développement pour assurer une implémentation fidèle à notre design.
+Une fois le design final approuvé via les tests utilisateurs, nous avons commencé le développement. Nous avons utilisé un stack technique nous permettant de release un MVP rapidement : React native avec expo et firebase pour le back-end. En nous répartissant bien les tâches et en faisant des sprints de 1 semaine nous avons release l'application en 2 mois. 
 
 ### Évaluation Post-lancement
 
-Après le lancement de l'application, nous avons continué à surveiller sa performance et à recueillir les retours des utilisateurs. Nous avons utilisé ces informations pour apporter d'autres améliorations et assurer que l'application continue de répondre efficacement aux besoins de ses utilisateurs.
+Après le lancement de l'application, nous avons continué à surveiller sa performance et à recueillir les retours des utilisateurs. Nous avons utilisé ces informations pour apporter d'autres améliorations et assurer que l'application continue de répondre efficacement aux besoins de ses utilisateurs. Nous travaillons actuellement pour rendre l'application open-source.
 
-Cet processus itératif et centré sur l'utilisateur nous a permis de créer une application qui non seulement résout les problèmes rencontrés par les individus vivant en logement partagé, mais offre également une expérience agréable et facile à utiliser.
+Cet processus itératif et centré sur l'utilisateur nous a permis de créer une application qui non seulement résout les problèmes rencontrés par les individus vivant en colocation, mais offre également une expérience agréable et facile à utiliser.
 
 
 
