@@ -3,7 +3,7 @@ layout: ../../layouts/MarkdownProjectLayout.astro
 title: 'Pigly'
 pubDate: '2024-02-21'
 priority: 1
-description: "Pigly, l'application révolutionnaire qui résout le dilemme où allons-nous manger ? en 1 minute et 37 secondes, en fonction de votre humeur actuelle. Conçue pour les décisions spontanées, Pigly est votre guide ultime vers la découverte culinaire."
+description: "Pigly, l'application qui résout le dilemme où allons-nous manger ? en 1 minute et 37 secondes, en fonction de votre humeur actuelle. Conçue pour les décisions spontanées, Pigly est votre guide ultime vers la découverte culinaire."
 author: 'Paul Mazeau'
 image:
     url: '/images/projects/Pigly/Pigly.webp'
@@ -11,7 +11,7 @@ image:
 tags: ["Tech", "Application"]
 thumbnail: "/images/projects/Pigly/PiglyThumbmail.webp"
 ---
-Pigly est une application qui vous donne un restaurant, un bar ou un club à visiter en 1 minute et 37 secondes basé sur votre humeur actuelle. L'application se concentre sur l'instant pour mettre fin au dilemme "où devrions-nous manger ?". Ce projet a été entièrement conçu par moi-même, et la partie business de l'application a été pensée par Mathis Laubier. Je suis actuellement en train de développer l'application, qui devrait être lancée d'ici la fin février.
+Pigly est une application qui vous donne un restaurant, un bar ou un club à visiter en 1 minute et 37 secondes basé sur votre mood actuel. L'application se concentre sur l'instant pour mettre fin au dilemme "où devrions-nous manger ?". Ce projet a été entièrement conçu par moi-même, et la partie business de l'application a été pensée par Mathis Laubier. Je suis actuellement en train de développer l'application, qui devrait être lancée d'ici la rentrée 2025.
 
 ## Le problème
 
@@ -27,7 +27,7 @@ Une application qui vous donne un restaurant, un bar ou un club à visiter en 1 
 
 ### 1. Recherche et découverte
 
-Notre première étape a été d'identifier les problèmes que les utilisateurs rencontrent lorsqu'ils cherchent un restaurant qui correspond à leur humeur ou à leurs envies du moment. Nous avons mené une série d'enquêtes et d'entretiens avec des personnes qui mangent fréquemment à l'extérieur ou utilisent des applications de recherche de restaurant. En outre, nous avons effectué une analyse concurrentielle des applications existantes dans ce domaine.
+Notre première étape a été d'identifier les problèmes que les utilisateurs rencontrent lorsqu'ils cherchent un restaurant qui correspond à leur humeur ou à leurs envies du moment. Nous avons mené une série d'enquêtes et d'entretiens avec des personnes qui mangent fréquemment à l'extérieur ou utilisent des applications de recherche de restaurant. En outre, nous avons effectué une analyse concurrentielle des applications existantes dans ce domaine. Je pense que ce qui nous a le plus aidé c'est le sondage que nous avons lancé pendant que nous concevons l'application.
 
 <img src="/images/projects/Pigly/Data.webp" alt="Pigly Project Image" class="blog-content-image-details"/>
 
@@ -42,7 +42,7 @@ Sur la base de notre recherche utilisateur, nous avons créé deux personas clé
 - Aisance avec la technologie : Très à l'aise avec la technologie. Utilise fréquemment son smartphone pour diverses tâches.
 - Objectif : Trouver rapidement des restaurants qui correspondent à ses envies spécifiques, à son budget et à ses préférences de localisation.
 
-**2. Perry le Jeune Professionnel :**
+**2. Thomas le Jeune Professionnel :**
 
 - Occupation : Professionnel(le) actif(ve) jeune
 - Âge : 25-30 ans
@@ -57,28 +57,28 @@ Sur la base de notre recherche utilisateur, nous avons créé deux personas clé
 
 ### 4. Wireframes
 
-Nous avons développé des maquettes de faible fidélité pour la disposition de base et les fonctions de l'application. Ces esquisses ont fourni une structure de base de l'application et nous ont permis de recueillir les premiers retours des utilisateurs potentiels.
+J'ai conçu des low-fidelity wireframe pour la disposition de base et les fonctions de l'application. Ces esquisses ont fourni une structure de base de l'application et nous ont permis de recueillir les premiers retours des utilisateurs potentiels. Notre volonté était, dès la conception, de faire de nombreux aller retours entre les users et nous pour créer l'application qui fit au mieux le besoin.
 
 <img src="/images/projects/Pigly/LowFi.webp" alt="Pigly Project Image" class="blog-content-image-details"/>
 
 ### 5. Itération
 
-Les commentaires issus des tests utilisateurs ont été pris en compte pour affiner et améliorer la conception. Le cycle de test et d'itération s'est poursuivi jusqu'à obtenir un design satisfaisant qui répond aux besoins des utilisateurs et aux objectifs commerciaux.
+Les commentaires issus des premiers tests utilisateurs ont été pris en compte pour affiner et améliorer la conception. Le cycle de test et d'itération s'est poursuivi jusqu'à obtenir un design satisfaisant qui répond aux besoins des utilisateurs.
 
 <img src="/images/projects/Pigly/Iteration.webp" alt="Pigly Project Image" class="blog-content-image-details"/>
 
 ### 6. Prototypage et tests
 
-Nous avons créé des prototypes de haute fidélité qui incorporaient des éléments d'interface utilisateur et des interactions réalistes basées sur nos maquettes. Ces prototypes ont été utilisés pour des tests d'utilisabilité, où nous avons recueilli des retours précieux des utilisateurs pour affiner notre design.
+J'ai créé des high-fidelity wireframe qui incorporaient des éléments d'interface utilisateur et des interactions réalistes basées sur nos low fi wireframe. Ces prototypes ont été utilisés pour des tests d'utilisabilité, où nous avons recueilli des retours précieux des utilisateurs pour créer la version finale du MVP de l'application.
 
 ### 7. Documentation
 
-Nous avons maintenu une documentation détaillée de nos découvertes de recherche, personas, parcours utilisateurs, maquettes, prototypes et retours des utilisateurs. Cela a assuré la transparence et fourni une référence pour les parties prenantes et l'équipe de développement.
+Dès le début, nous avons maintenu une documentation détaillée de nos découvertes de recherche, personas, parcours utilisateurs, maquettes, prototypes et retours des utilisateurs. Ce sont des ressources très précieuse qu'il ne faut pas perdre car on en aura besoin tout au long du cycle de conception et de vie de l'application.
 
 ### 8. Développement
 
-Nous avons transmis les actifs de design finaux et le document de spécification à l'équipe de développement pour l'implémentation. Nous sommes restés étroitement impliqués tout au long du processus de développement pour garantir une implémentation fidèle du design.
+Une fois les prototypes validés j'ai commencé le développement. J'ai choisis un stack technique que je connaisais déjà via [MyColoc](https://www.paulmazeau.com/projects/MyColoc) : react native avec expo et firebase. Vous pouvez trouver le code source de l'application juste [ici](https://github.com/PaulMazeau/Pigly).
 
-Cette approche garantit que Pigly est centré sur l'utilisateur et résout un problème réel pour ses utilisateurs en fournissant un moyen rapide et pratique de trouver un restaurant qui correspond à leur humeur et à leurs préférences.
+Cette approche nous garantit que Pigly est centré sur l'utilisateur et résout un problème réel pour ses utilisateurs en fournissant un moyen rapide et pratique de trouver un restaurant qui correspond à leur humeur et à leurs préférences.
 
 
