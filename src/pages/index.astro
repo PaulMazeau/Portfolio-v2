@@ -15,11 +15,18 @@ const pageDescription = "Explorez le monde du design de produits et du développ
         Pour plus d'informations sur mon parcours professionnel et mes passions, n'hésitez pas à explorer mes <a href="/projets" class="link">projets</a> et mon <a href="/blog" class="link">blog</a>.
       </p>
       <hr class="divider">
-      <div class="links-container">
-        <a href="https://github.com/PaulMazeau" class="link" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.are.na/paul-m/channels" class="link" target="_blank" rel="noopener noreferrer">Are.na</a>
-        <a href="https://www.linkedin.com/in/paul-mazeau/" class="link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </div>      
+      <div class="footer">
+        <div class="links-container">
+          <a href="https://github.com/PaulMazeau" class="link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.are.na/paul-m/channels" class="link" target="_blank" rel="noopener noreferrer">Are.na</a>
+          <a href="https://www.linkedin.com/in/paul-mazeau/" class="link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <div class="timer-container">
+          <p class="timer-city">Paris</p>
+          <span id="timer"></span>
+        </div>
+        
+      </div>    
     </div>
     <canvas
     id="cobe"
@@ -31,6 +38,20 @@ const pageDescription = "Explorez le monde du design de produits et du développ
   </div>
   
   <script type="module">
+    function updateParisTime() {
+      const parisTime = new Intl.DateTimeFormat('fr-FR', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        timeZone: 'Europe/Paris'
+      }).format(new Date());
+
+      document.getElementById('timer').textContent = parisTime;
+    }
+
+    setInterval(updateParisTime, 1000);
+
+
     import createGlobe from 'https://cdn.skypack.dev/cobe'
   
     let canvas = document.getElementById("cobe")
