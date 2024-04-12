@@ -19,7 +19,7 @@ const sortedPosts = allPosts.sort((a, b) => {
       {sortedPosts.map((post) => (
         <li class="article">
           {post.frontmatter.wip ? <div class="pins-container">
-            <img src="/public/images/Icon-small.png" class="pins-wip"/>
+            <img src="/public/images/Icon-wip.png" class="pins-wip"/>
           </div> : null}
           <a href={post.url} class="article-title">
             <div class="image-container">
