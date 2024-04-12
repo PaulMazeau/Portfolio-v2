@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownProjectLayout.astro
 title: 'Disruptive World'
 pubDate: '2024-02-21'
 priority: 3
+wip: false
 description: "Disruptive World était initialement une marque de vêtements que j'ai créée en 2020, avec l'objectif d'améliorer mes compétences en design et en impression. Aujourd'hui, j'envisage de transformer Disruptive World en une maison d'édition indépendante dédiée au graffiti, à la photographie et au skateboard."
 author: 'Paul Mazeau'
 image:

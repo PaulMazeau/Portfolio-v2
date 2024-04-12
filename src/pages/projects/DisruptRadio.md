@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownProjectLayout.astro
 title: 'Disrupt Sound'
 pubDate: '2024-02-21'
 priority: 2
+wip: false
 description: "Disrupt Sound est le projet de 4 producteurs de musique, leur objectif est de vendre leurs musiques via une chaîne YouTube. En tant que responsable de la stratégie visuelle, j'ai élaboré l'identité visuelle du projet et créé un ensemble d'assets de design distinctifs."
 author: 'Paul Mazeau'
 image:

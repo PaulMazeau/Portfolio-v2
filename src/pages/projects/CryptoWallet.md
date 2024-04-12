@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownProjectLayout.astro
 title: 'Crypto Wallet'
 pubDate: '2024-02-21'
 priority: 2
+wip: false
 description: "Découvrez Pocket, une révolution dans la finance décentralisée, conçue pour démocratiser l'accès aux cryptomonnaies sans intermédiaires. Rejoignez-nous dans cette aventure pour une gestion de portefeuille simplifiée."
 author: 'Paul Mazeau'
 image:

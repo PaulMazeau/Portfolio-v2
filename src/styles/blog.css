@@ -1,26 +1,43 @@
+.article {
+    position: relative;
+}
+
 .articles-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 40px;
     list-style: none;
     padding: 0;
 }
 
-/* Ajout du style pour le conteneur d'image */
 .image-container {
-    overflow: hidden; /* Empêche l'image de déborder lors du zoom */
-    line-height: 0; /* Supprime l'espace supplémentaire sous l'image */
+    overflow: hidden; 
+    line-height: 0;
+}
+
+.pins-container {
+    position: absolute;
+    transform: rotate(17deg);
+    width: 80px;
+    right: -20px;
+    top: 4px;
+    z-index: 2;
+}
+
+.pins-wip {
+    width: 100%;
+    height: auto;
 }
 
 .article-image {
     width: 100%; 
     height: 337px; 
     object-fit: cover;
-    transition: transform 0.2s ease; /* Transition douce pour le zoom */
+    transition: transform 0.2s ease; 
 }
 
 .image-container:hover .article-image {
-    transform: scale(1.05); /* Zoom dans l'image sans changer la taille du conteneur */
+    transform: scale(1.05);
 }
 
 .article-title {

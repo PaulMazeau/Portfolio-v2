@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownProjectLayout.astro
 title: 'MyColoc'
 pubDate: '2024-02-21'
 priority: 1
+wip: false
 description: "MyColoc révolutionne la colocation avec une application tout-en-un qui simplifie la vie commune. Découvrez comment nous avons fusionné gestion des tâches, partage des dépenses et mini-jeux pour créer la parfaite harmonie entre colocataire."
 author: 'Paul Mazeau'
 image:

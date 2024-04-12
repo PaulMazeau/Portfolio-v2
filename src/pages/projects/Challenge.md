@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownProjectLayout.astro
 title: 'Challenge'
 pubDate: '2024-02-21'
 priority: 2
+wip: false
 description: "Challenge permet de battre la courbe de l'oublie de façon automatique et ludique. En utilisant la force de l'intelligence artificielle il est facile de synthétiser une notion et créer un quizz permettant la répétition espacée."
 author: 'Paul Mazeau'
 image:

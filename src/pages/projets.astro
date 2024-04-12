@@ -6,7 +6,6 @@ const pageTitle = "Mes Projets";
 const pageDescription = "Explorez le monde du design de produits et du développement avec Paul Mazeau. Plongez dans mes aventures de design, développement et découvertes sur mon blog dédié à l'innovation et à la créativité.";
 import '../styles/blog.css'
 
-// Trier les posts par ordre de priorité défini, puis par titre si la priorité est égale
 const sortedPosts = allPosts.sort((a, b) => {
   return a.frontmatter.priority - b.frontmatter.priority || a.frontmatter.title.localeCompare(b.frontmatter.title);
 });
@@ -19,6 +18,9 @@ const sortedPosts = allPosts.sort((a, b) => {
     <ul class="articles-list">
       {sortedPosts.map((post) => (
         <li class="article">
+          {post.frontmatter.wip ? <div class="pins-container">
+            <img src="/public/images/Icon-small.png" class="pins-wip"/>
+          </div> : null}
           <a href={post.url} class="article-title">
             <div class="image-container">
               <img src={post.frontmatter.thumbnail} alt={`Thumbnail for ${post.frontmatter.title}`} class="article-image"/>
