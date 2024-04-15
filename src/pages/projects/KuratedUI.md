@@ -13,4 +13,4 @@ tags: ["Design", "Musique"]
 thumbnail: "/images/projects/KuratedUI/KuratedUIThumbmail.webp"
 ---
 
-Kurated UI est une librairie headless de composant react
+Kurated UI est une librairie headless de composant react open source. Je compte documenter toute l'avancée du projet un peu comme un journal de bord sur mon Blog, car c'est surement le plus gros projets que j'ai jamais fait.
