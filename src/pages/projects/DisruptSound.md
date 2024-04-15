@@ -15,6 +15,8 @@ thumbnail: "/images/projects/DisruptSound/DisruptSoundThumbmail.webp"
 
 J'ai collaboré avec un groupe de quatre talentueux producteurs de musique sur un projet innovant visant à établir une présence en ligne constante en téléchargeant un nouveau beat de musique sur YouTube chaque jour. Notre objectif était de générer un flux de revenus secondaire en proposant notre catalogue complet de productions musicales à la vente. En tant que responsable de la stratégie visuelle, j'étais chargé de forger l'identité visuelle du projet et de créer un ensemble d'assets de design distinctifs pour assurer la cohérence et l'attrait de la marque sur toutes les plateformes numériques. Vous pouvez trouver la chaîne YouTube juste [ici](https://www.youtube.com/@disrupt_sound/videos).
 
+<img src="/images/projects/DisruptSound/mockup.webp" alt="Image du Projet Disrupt Sound" class="blog-content-image"/>
+
 ## Le processus de design
 
 J'ai intentionnellement offert une variété de choix dans mes propositions. Étant des artistes établis, il me semblait pertinent de fournir une large sélection qui s'aligne au mieux avec leur musique. Cette approche contraste avec l'orientation souvent nécessaire pour les individus moins expérimentés qui ont généralement besoin de plus de direction et de soutien.
