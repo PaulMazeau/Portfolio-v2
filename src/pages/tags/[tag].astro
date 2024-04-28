@@ -1,13 +1,16 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-export async function getStaticPaths() {
-  const allPosts = await Astro.glob('../posts/*.md');
+export const prerender = true;
 
+export async function getStaticPaths() {
+  const allPosts = await Astro.glob('../projects/*.md');
   const uniqueTags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
 
   return uniqueTags.map((tag) => {
-    const filteredPosts = allPosts.filter((post) => post.frontmatter.tags.includes(tag));
+    const filteredPosts = allPosts.filter((post) => post.frontmatter.tags.includes(tag)).sort((a, b) => {
+      return a.frontmatter.priority - b.frontmatter.priority || a.frontmatter.title.localeCompare(b.frontmatter.title);
+    });
     return {
       params: { tag },
       props: { posts: filteredPosts },
@@ -17,11 +20,29 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.params;
 const { posts } = Astro.props;
+const pageTitle = `Posts tagged with ${tag}`;
+const pageDescription = `Explore posts tagged with ${tag} on this blog.`;
+import '../../styles/blog.css'
 ---
 
-<BaseLayout pageTitle={tag}>
-    <p>Posts tagged with {tag}</p>
-    <ul>
-        {posts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+<BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
+  <div class="content">
+    <h1>Posts tagged with {tag}</h1>
+    <ul class="articles-list">
+      {posts.map((post) => (
+        <li class="article">
+          {post.frontmatter.wip ? <div class="pins-container">
+            <img src="/images/Icon-wip.png" class="pins-wip"/>
+          </div> : null}
+          <a href={post.url} class="article-title">
+            <div class="image-container">
+              <img src={post.frontmatter.thumbnail} alt={`Thumbnail for ${post.frontmatter.title}`} class="article-image"/>
+            </div>
+            <span class="article-title"> {post.frontmatter.title}</span>
+            <span class="article-description"> {post.frontmatter.description}</span>
+          </a>
+        </li>
+      ))}
     </ul>
-  </BaseLayout>
+  </div>
+</BaseLayout>
